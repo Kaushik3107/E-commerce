@@ -1,0 +1,68 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .home-link{
+    color: blueviolet;
+    margin: 0;
+    font-size: 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    padding-left: 15px;
+    /* padding-top: 10px; */
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.navbar .nav-search {
+    flex: 1;
+    display: flex;
+    margin: 0% 5%;
+}
+
+.navbar .nav-search input {
+    flex: 1px;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    height: 36px;
+    border-right: 0px;
+}
+
+.navbar .nav-search button {
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    height: 36px;
+    border-left: 0px;
+}
+.suggest-result{
+    position: absolute;
+    display: list-item !important;
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    top: 52px;
+    border: 1px solid #ddd;
+}
+.suggest-result li{
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.suggest-result li a{
+    color: blueviolet;
+    cursor: pointer;
+}

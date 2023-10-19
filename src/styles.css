@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+.container {
+    margin: 0% 5%;
+}
+
+.common-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    color: blueviolet;
+    margin: auto;
+}
+
+.common-form label {
+    /* display: inline-block; */
+    margin: 2px;
+    padding: 0px;
+    /* border: 1px solid; */
+    width: 100%;
+}
+
+.form-input {
+    height: 35px;
+    width: 100%;
+    border: 1px solid blueviolet;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    color: blueviolet;
+}
+
+.form-button {
+    width: 100%;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    background-color: #8a2be24f;
+    font-size: large;
+    font-weight: bold;
+    height: 36px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.p-message{
+    color: green;
+    text-align: center;
+}
+
+.carousel-caption{
+    background-color: #00000082;
+    border-radius: 10px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: black;
+    border-radius: 5px;
+}
