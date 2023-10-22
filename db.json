@@ -79,6 +79,15 @@
       "description": "Airdrop",
       "image": "https://mir-s3-cdn-cf.behance.net/projects/404/a3254e179867621.Y3JvcCwzMDAwLDIzNDYsMCw0MDg.jpg",
       "id": 6
+    },
+    {
+      "name": "Nike Shoes",
+      "price": 10500,
+      "color": "Brown",
+      "category": "Shoe",
+      "description": "A Nike sport Shoes",
+      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/07f289b9-7ca1-49ec-a347-b69b95e17032/air-jordan-1-low-se-shoes-H7DD5v.png",
+      "id": 7
     }
   ]
 }

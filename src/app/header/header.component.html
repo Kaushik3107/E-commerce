@@ -8,11 +8,12 @@
       placeholder="Search for Product"
       name=""
       id=""
+      #SearchInput
     />
-    <button>Search</button>
+    <button (click)="SearchSubmit(SearchInput.value)">Search</button>
     <ul class="suggest-result" *ngIf="searchResult">
       <li *ngFor="let item of searchResult">
-        <a href="">{{ item.name }}</a>
+        <a (mousedown)="redirectToDetails(item.id)">{{ item.name }}</a>
       </li>
     </ul>
   </div>
