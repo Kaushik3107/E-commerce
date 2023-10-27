@@ -16,9 +16,10 @@ export class SellerService {
     this.http
       .post('http://localhost:3000/seller', data, { observe: 'response' })
       .subscribe((res) => {
-        this.isSellerLoggedIn.next(true);
-        localStorage.setItem('seller', JSON.stringify(res.body));
-        this.router.navigate(['seller-home']);
+        if (res) {
+          localStorage.setItem('seller', JSON.stringify(res.body));
+          this.router.navigate(['seller-home']);
+        }
       });
   }
 

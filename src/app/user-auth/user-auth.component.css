@@ -1,0 +1,9 @@
+.sign-up h1, .login h1 {
+    color: blueviolet;
+    text-align: center;
+    margin: 30px;
+}
+.toggle-login{
+    cursor: pointer;
+    color: deeppink;
+}
