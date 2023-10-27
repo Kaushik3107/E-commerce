@@ -11,18 +11,6 @@
       "email": "rohitsharma@test.com",
       "password": "abc@123",
       "id": 2
-    },
-    {
-      "name": "Virat Kohli",
-      "email": "viratkohli@test.com",
-      "password": "abc@123",
-      "id": 3
-    },
-    {
-      "name": "Ajinkya Rahane",
-      "email": "ajinkyarahane@test.com",
-      "password": "abc@123",
-      "id": 4
     }
   ],
   "products": [
@@ -96,24 +84,6 @@
       "email": "rohitsharma@user.com",
       "password": "abc123",
       "id": 1
-    },
-    {
-      "name": "Kaushik Dange",
-      "email": "kaushikdange@user.com",
-      "password": "abc123",
-      "id": 2
-    },
-    {
-      "name": "rohit sharma",
-      "email": "rohitsharma@user.com",
-      "password": "abc123",
-      "id": 3
-    },
-    {
-      "name": "Kaushik Dange",
-      "email": "kaushikdange@user.com",
-      "password": "abc123",
-      "id": 4
     }
   ]
 }

@@ -46,6 +46,10 @@
     text-align: center;
 }
 
+.p-error{
+    color:red;
+}
+
 .carousel-caption{
     background-color: #00000082;
     border-radius: 10px;
@@ -53,4 +57,11 @@
 .carousel-control-next-icon, .carousel-control-prev-icon {
     background-color: black;
     border-radius: 5px;
+}
+.invalid-input{
+    color: red;
+    width: 100%;
+}
+button:disabled{
+    cursor: not-allowed;
 }

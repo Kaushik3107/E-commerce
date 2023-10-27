@@ -8,6 +8,7 @@ import { UserService } from '../services/user.service';
   styleUrls: ['./user-auth.component.css'],
 })
 export class UserAuthComponent implements OnInit {
+  userAuthError: string = '';
   constructor(private userService: UserService) {}
 
   ngOnInit(): void {
@@ -20,7 +21,13 @@ export class UserAuthComponent implements OnInit {
   }
 
   LoginUser(data: Signup) {
-    console.warn(data);
+    this.userService.userLogin(data);
+    this.userService.invalidUserAuth.subscribe((result) => {
+      if (result) {
+        this.userAuthError = 'Please Enter Valid User Details';
+        alert('User Not Found! Please Enter Valid User Details ');
+      }
+    });
   }
 
   loadLogin() {
