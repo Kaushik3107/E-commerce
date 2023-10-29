@@ -5,12 +5,6 @@
       "email": "kaushikdange@test.com",
       "password": "adc@123",
       "id": 1
-    },
-    {
-      "name": "rohit sharma",
-      "email": "rohitsharma@test.com",
-      "password": "abc@123",
-      "id": 2
     }
   ],
   "products": [

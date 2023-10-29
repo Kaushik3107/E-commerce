@@ -24,8 +24,9 @@ export class HeaderComponent implements OnInit {
           this.menuType = 'seller';
           if (localStorage.getItem('seller')) {
             let sellerStore = localStorage.getItem('seller');
-            let sellerData = sellerStore && JSON.parse(sellerStore)[0];
+            let sellerData = sellerStore && JSON.parse(sellerStore);
             this.sellerName = sellerData.name;
+            console.warn(this.sellerName);
           }
         } else if (localStorage.getItem('user')) {
           let userStore = localStorage.getItem('user');
