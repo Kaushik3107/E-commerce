@@ -9,6 +9,7 @@ export interface Login {
 }
 
 export interface product {
+  quantity: number;
   id: number;
   name: string;
   price: number;
