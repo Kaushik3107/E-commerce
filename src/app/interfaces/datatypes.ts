@@ -18,3 +18,16 @@ export interface product {
   color: string;
   image: string;
 }
+
+export interface cart {
+  quantity: number;
+  id: number | undefined;
+  name: string;
+  price: number;
+  description: string;
+  category: string;
+  color: string;
+  image: string;
+  userId: number;
+  productId: number;
+}
