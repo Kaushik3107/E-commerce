@@ -9,25 +9,26 @@ export interface Login {
 }
 
 export interface product {
-  quantity: number;
-  id: number;
   name: string;
   price: number;
-  description: string;
   category: string;
   color: string;
   image: string;
+  description: string;
+  id: number;
+  quantity: undefined | number;
+  productId: undefined | number;
 }
 
 export interface cart {
-  quantity: number;
-  id: number | undefined;
   name: string;
   price: number;
-  description: string;
   category: string;
   color: string;
   image: string;
-  userId: number;
+  description: string;
+  id: number | undefined;
+  quantity: undefined | number;
   productId: number;
+  userId: number;
 }

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SellerService } from '../services/seller.service';
-import { Login, Signup } from '../interfaces/datatypes';
-import { Router } from '@angular/router';
+import { Login, Signup, cart, product } from '../interfaces/datatypes';
 
 @Component({
   selector: 'app-seller-auth',
@@ -10,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class SellerAuthComponent implements OnInit {
   isLoggedIn = false;
-  constructor(private sellerService: SellerService, private router: Router) {}
+  constructor(private sellerService: SellerService) {}
   ngOnInit(): void {
     this.sellerService.reloadSeller();
   }

@@ -51,12 +51,13 @@ export class ProductService {
     let localCart = localStorage.getItem('localCart');
     if (!localCart) {
       localStorage.setItem('localCart', JSON.stringify([data]));
+      this.CartData.emit([data]);
     } else {
       cartData = JSON.parse(localCart);
       cartData.push(data);
       localStorage.setItem('localCart', JSON.stringify(cartData));
+      this.CartData.emit(cartData);
     }
-    this.CartData.emit(cartData);
   }
 
   localRemoveToCart(productId: number) {

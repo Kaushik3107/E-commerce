@@ -21,26 +21,22 @@ export class HeaderComponent implements OnInit {
     this.route.events.subscribe((value: any) => {
       if (value.url) {
         if (localStorage.getItem('seller') && value.url.includes('seller')) {
-          console.warn('Inside Seller Area');
+          // console.warn('Inside Seller Area');
+          let sellerStore = localStorage.getItem('seller');
+          let sellerData = sellerStore && JSON.parse(sellerStore)[0];
+          this.sellerName = sellerData.name;
           this.menuType = 'seller';
-          if (localStorage.getItem('seller')) {
-            let sellerStore = localStorage.getItem('seller');
-            let sellerData = sellerStore && JSON.parse(sellerStore);
-            this.sellerName = sellerData.name;
-            console.warn(this.sellerName);
-          }
         } else if (localStorage.getItem('user')) {
           let userStore = localStorage.getItem('user');
           let userData = userStore && JSON.parse(userStore);
           this.userName = userData.name;
           this.menuType = 'user';
         } else {
-          console.warn('Outside Seller Area');
+          // console.warn('Outside Seller Area');
           this.menuType = 'default';
         }
       }
     });
-
     let cartData = localStorage.getItem('localCart');
     if (cartData) {
       this.cartCount = JSON.parse(cartData).length;
@@ -57,6 +53,7 @@ export class HeaderComponent implements OnInit {
   userLogout() {
     localStorage.removeItem('user');
     this.route.navigate(['/user-auth']);
+    this.productService.CartData.emit([]);
   }
 
   searchProduct(query: KeyboardEvent) {

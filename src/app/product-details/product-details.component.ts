@@ -11,8 +11,9 @@ import { cart, product } from '../interfaces/datatypes';
 export class ProductDetailsComponent implements OnInit {
   productData: undefined | product;
   productQuantity: number = 1;
-  quantity: number = 1;
+  // quantity: number = 1;
   removeItem = false;
+  cartData: product | undefined;
   constructor(
     private activatedRoute: ActivatedRoute,
     private productService: ProductService
@@ -58,18 +59,18 @@ export class ProductDetailsComponent implements OnInit {
         console.warn(userId);
         let cartData: cart = {
           ...this.productData,
-          userId,
           productId: this.productData.id,
+          userId,
         };
         delete cartData.id;
         this.productService.AddtoCartDB(cartData).subscribe((result) => {
           if (result) {
             alert('product added to DB');
+            this.removeItem = true;
           }
         });
       }
     }
-    this.removeItem = true;
   }
 
   removeToCart(productId: number) {
