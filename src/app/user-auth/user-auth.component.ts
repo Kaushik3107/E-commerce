@@ -66,5 +66,8 @@ export class UserAuthComponent implements OnInit {
         }
       });
     }
+    setTimeout(() => {
+      this.productService.getCardList(userId);
+    }, 2000);
   }
 }
