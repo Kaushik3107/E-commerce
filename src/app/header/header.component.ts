@@ -31,6 +31,7 @@ export class HeaderComponent implements OnInit {
           let userData = userStore && JSON.parse(userStore);
           this.userName = userData.name;
           this.menuType = 'user';
+          this.productService.getCardList(userData.id);
         } else {
           // console.warn('Outside Seller Area');
           this.menuType = 'default';
