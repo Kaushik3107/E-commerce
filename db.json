@@ -94,30 +94,6 @@
   ],
   "cart": [
     {
-      "name": "Nike Shoes",
-      "price": 10500,
-      "color": "Brown",
-      "category": "Shoe",
-      "description": "A Nike sport Shoes",
-      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/07f289b9-7ca1-49ec-a347-b69b95e17032/air-jordan-1-low-se-shoes-H7DD5v.png",
-      "quantity": 1,
-      "productId": 7,
-      "userId": 1,
-      "id": 8
-    },
-    {
-      "name": "I Phone 15 pro",
-      "price": 50,
-      "color": "White",
-      "category": "Mobile",
-      "description": "apple product",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg",
-      "quantity": 1,
-      "productId": 1,
-      "userId": 1,
-      "id": 9
-    },
-    {
       "name": "I Phone 15 pro",
       "price": 50,
       "color": "White",
@@ -140,6 +116,18 @@
       "productId": 2,
       "userId": 2,
       "id": 11
+    },
+    {
+      "name": "I Phone 15 pro",
+      "price": 50,
+      "color": "White",
+      "category": "Mobile",
+      "description": "apple product",
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg",
+      "quantity": 1,
+      "productId": 1,
+      "userId": 1,
+      "id": 12
     }
   ]
 }
