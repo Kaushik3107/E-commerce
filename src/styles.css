@@ -13,11 +13,10 @@
 }
 
 .common-form label {
-    /* display: inline-block; */
     margin: 2px;
     padding: 0px;
-    /* border: 1px solid; */
     width: 100%;
+    text-align: left;
 }
 
 .form-input {
@@ -37,7 +36,6 @@
     font-size: large;
     font-weight: bold;
     height: 36px;
-    margin: 20px;
     cursor: pointer;
 }
 
