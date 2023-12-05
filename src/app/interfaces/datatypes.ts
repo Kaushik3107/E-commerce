@@ -40,3 +40,11 @@ export interface summary {
   delivery: number;
   total: number;
 }
+
+export interface orderData {
+  email: string;
+  address: string;
+  contact: string;
+  totalPrice: number;
+  userId: number;
+}

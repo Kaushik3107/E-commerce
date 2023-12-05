@@ -129,5 +129,15 @@
       "userId": 1,
       "id": 12
     }
+  ],
+  "orders": [
+    {
+      "email": "rohitsharma@user.com",
+      "address": "solapur",
+      "contact": "9999",
+      "totalPrice": 150,
+      "userId": 1,
+      "id": 1
+    }
   ]
 }
